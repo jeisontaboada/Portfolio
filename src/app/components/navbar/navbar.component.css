@@ -75,12 +75,23 @@
     transition: box-shadow 0.3s ease;
 }
 
-.btn__contacto:hover{
+.btn__contacto:hover {
     box-shadow: 0 7px 10px rgba(66, 185, 175, 0.4);
 }
 
 .btn__navbar {
     display: none;
+}
+
+@media screen and (max-width:1553px) {
+    .container__list ul li {
+        font-size: 15px;
+    }
+
+    .btn__contacto {
+        padding: 13px 30px;
+    }
+
 }
 
 
@@ -106,14 +117,7 @@
         width: 70%;
     }
 
-    .container__list ul li {
-        position: relative;
-        font-size: 18px;
-        font-weight: 500;
 
-        color: rgb(255, 255, 255);
-
-    }
 
 
 
@@ -135,7 +139,8 @@
         /* Mostrar el botón de menú en dispositivos móviles */
         cursor: pointer;
     }
-    .btn__navbar i{
+
+    .btn__navbar i {
         color: #43b8ae;
     }
 
@@ -149,11 +154,12 @@
     /* Estilos específicos para la lista de enlaces cuando el menú está visible */
 
 }
+
 @media (max-width: 768px) {
     .container__navbar img {
         width: 120px;
         height: 40px;
-    
+
     }
-    
+
 }
