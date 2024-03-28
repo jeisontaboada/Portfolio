@@ -1,0 +1,159 @@
+.container__navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 80px;
+    font-family: 'Poppins', sans-serif;
+
+    /* Ajusta la opacidad del fondo aquí */
+}
+
+
+.container__navbar img {
+    width: 150px;
+    height: 40px;
+
+}
+
+.container__list {
+    width: 55%;
+}
+
+.container__list ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__list ul li {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+
+}
+
+.enlaces {
+    cursor: pointer;
+}
+
+.container__list ul .enlaces::before {
+    content: '';
+    width: 0;
+    /* Comienza con un ancho de 0 para que se abra */
+    height: 3px;
+    background-color: #43b8ae;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    /* Posiciona el origen en el centro */
+    transform: translateX(-50%);
+    /* Mueve el pseudo-elemento hacia la izquierda en la mitad de su propio ancho */
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+    /* Agrega transición para una animación suave */
+}
+
+.container__list ul .enlaces:hover::before {
+    width: 100%;
+    /* Cambia el ancho para que la línea se abra */
+    opacity: 1;
+}
+
+.btn__contacto {
+    padding: 15px 40px;
+    border: 2px solid #43b8ae;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #43b8ae;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn__contacto:hover{
+    box-shadow: 0 7px 10px rgba(66, 185, 175, 0.4);
+}
+
+.btn__navbar {
+    display: none;
+}
+
+
+@media screen and (max-width:1453px) {
+
+    .container__list {
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .container__navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 30px 40px;
+
+    }
+
+    .container__list {
+        width: 70%;
+    }
+
+    .container__list ul li {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+
+        color: rgb(255, 255, 255);
+
+    }
+
+
+
+}
+
+@media screen and (max-width:997px) {
+
+    .container__list {
+        display: none;
+    }
+
+    .btn__navbar {
+        display: inline-block;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 2px solid #43b8ae;
+        /* Mostrar el botón de menú en dispositivos móviles */
+        cursor: pointer;
+    }
+    .btn__navbar i{
+        color: #43b8ae;
+    }
+
+    .image {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Estilos específicos para la lista de enlaces cuando el menú está visible */
+
+}
+@media (max-width: 768px) {
+    .container__navbar img {
+        width: 120px;
+        height: 40px;
+    
+    }
+    
+}

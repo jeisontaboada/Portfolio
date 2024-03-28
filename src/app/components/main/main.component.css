@@ -1,0 +1,244 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Agregamos para separar los elementos */
+    margin-top: 3rem;
+}
+
+.main__descripcion {
+    flex-basis: 50%;
+    /* Ocupa el 50% del espacio disponible */
+    padding-right: 20px;
+    /* Añadimos espacio a la derecha */
+}
+
+.nombre {
+    font-size: 3.5rem;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+}
+
+.apellido {
+    font-size: 3rem;
+    color: #43b8ae;
+}
+
+.descripcion {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: rgb(255, 255, 255);
+    max-width: 700px;
+}
+
+.btn__container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn__contacto:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.btn__cv {
+    padding: 18px 35px;
+    border: 2px solid #43b8ae;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #43b8ae;
+    margin-top: 50px;
+    font-size: 17px;
+    font-weight: 800;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: box-shadow 0.4s ease;
+}
+
+.btn__cv:hover {
+    box-shadow: 0 7px 10px rgba(66, 185, 175, 0.4);
+}
+
+.container__redes__sociales {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.container__redes__sociales img {
+    width: 3x;
+    height: 33px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.container__redes__sociales img:hover {
+    filter: grayscale(0);
+}
+
+
+.main__imagen {
+    position: relative;
+    flex-basis: 35%;
+}
+
+.imagen {
+    position: relative;
+    background-color: #43b8ae;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.imagen img {
+    position: absolute;
+    width: 70%;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fade-in-out {
+    animation: fadeInOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/*RESPONSIVO*/
+
+@media screen and (max-width:1453px) {
+    .main__container {
+        width: 85%;
+        margin-top: 5.3rem;
+    }
+
+    .nombre {
+        font-size: 3rem;
+    }
+
+    .apellido {
+        font-size: 2.5rem;
+    }
+
+    .descripcion {
+        font-size: 17px;
+    }
+
+    .imagen {
+        position: relative;
+        background-color: #43b8ae;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        height: auto;
+    }
+
+    .main__container {
+        margin-top: 15rem;
+        flex-direction: column;
+    }
+    .container__redes__sociales img{
+        filter: grayscale(0);
+    }
+
+    .main__imagen {
+        margin-top: 80px;
+    }
+    .imagen {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main__container{
+        margin-top: 9rem
+    }
+
+    .main__descripcion,
+    .main__imagen {
+        flex-basis: 100%;
+        /* Ocupa todo el ancho */
+        padding: 0 20px;
+        /* Añade espacio a los lados */
+        text-align: center;
+    }
+
+    .nombre {
+        font-size: 2.1rem;
+    }
+
+    .apellido {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+
+    }
+
+    .btn__container {
+        justify-content: center;
+    }
+
+    .container__redes__sociales {
+        justify-content: center;
+      
+    }
+    .container__redes__sociales img{
+        filter: grayscale(0);
+    }
+
+    .main__imagen {
+        margin-top: 50px;
+    }
+
+    .imagen {
+        width: 320px;
+        height: 320px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .imagen {
+
+        width: 280px;
+        height: 280px;
+    }
+}
