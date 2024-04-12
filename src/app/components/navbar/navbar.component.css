@@ -44,7 +44,7 @@
     width: 0;
     /* Comienza con un ancho de 0 para que se abra */
     height: 3px;
-    background-color: #43b8ae;
+    background-color: var(--colorPrimary);
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -64,10 +64,10 @@
 
 .btn__contacto {
     padding: 15px 40px;
-    border: 2px solid #43b8ae;
+    border: 2px solid var(--colorPrimary);
     border-radius: 10px;
     background-color: transparent;
-    color: #43b8ae;
+    color: var(--colorPrimary);
     cursor: pointer;
     border-radius: 10px;
     font-weight: 700;
@@ -135,13 +135,13 @@
         padding: 5px 10px;
         border-radius: 5px;
         background-color: transparent;
-        border: 2px solid #43b8ae;
+        border: 2px solid var(--colorPrimary);
         /* Mostrar el botón de menú en dispositivos móviles */
         cursor: pointer;
     }
 
     .btn__navbar i {
-        color: #43b8ae;
+        color: var(--colorPrimary);
     }
 
     .image {

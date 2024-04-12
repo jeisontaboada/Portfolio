@@ -1,0 +1,131 @@
+.container__footer {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .08) 1%, hsla(0, 0%, 100%, .04));
+    padding: 3rem 5rem 3rem 2rem;
+}
+
+.footer {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid var(--colorPrimary);
+    padding-bottom: 40px;
+}
+
+.footer h1 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+}
+
+.footer h1::before {
+    content: '';
+    width: 55%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--colorPrimary);
+    bottom: -5px;
+    left: 0;
+}
+
+.p__company {
+
+    color: white;
+}
+
+.column__footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   
+}
+
+.column__footer ul li {
+    color: white;
+    cursor: pointer;
+
+}
+.column__footer ul li:hover {
+    opacity: 0.7;
+}
+
+.container__copy {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.2rem;
+
+}
+
+.container__copy h4 {
+    color: white;
+
+}
+
+.icons__footer {
+    display: flex;
+    gap: 20px;
+}
+
+li i {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+li i:hover {
+    color: var(--colorPrimary);
+}
+
+
+@media screen and (max-width:1553px) {
+    .container__footer {
+
+        padding: 3rem 7rem 2rem 7rem;
+    }
+
+    .footer {
+        margin: 0 auto;
+        display: flex;
+        max-width: 1500px;
+        justify-content: space-between;
+    }
+
+    .footer h1 {
+        font-size: 19px;
+    }
+
+    .p__company {
+        width: 280px;
+        font-size: 13px;
+    }
+
+    .column__footer ul li {
+        color: white;
+        font-size: 13px;
+    }
+
+    .column__footer ul i {
+        font-size: 13px;
+        margin-right: 15px;
+    }
+
+    .container__copy h4 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+
+    li {
+        text-decoration: none;
+    }
+
+
+
+
+}

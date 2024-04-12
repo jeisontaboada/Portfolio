@@ -51,8 +51,8 @@
     border: none;
     border-radius: 15px;
     background-color: transparent;
-    border: 1px solid #43b8ae;
-    color: #43b8ae;
+    border: 1px solid var(--colorPrimary);
+    color: var(--colorPrimary);
     cursor: pointer;
 
 }

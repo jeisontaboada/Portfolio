@@ -31,7 +31,7 @@
     line-height: 1;
     margin-bottom: 15px;
     margin-top: 20px;
-    color: #43b8ae;
+    color: var(--colorPrimary);
 }
 
 .description p {
